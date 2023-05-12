@@ -10,9 +10,12 @@ import javax.inject.Inject;
 import dagger.hilt.android.lifecycle.HiltViewModel;
 import kotlinx.coroutines.launch
 import teka.android.smoothrufaaandroidclient.domain.items.HospitalSpot
+import teka.android.smoothrufaaandroidclient.domain.repository.FacilityRepository
 
 @HiltViewModel
-class MapsViewModel @Inject constructor(): ViewModel() {
+class MapsViewModel @Inject constructor(
+        facilityRepository: FacilityRepository
+): ViewModel() {
         var state by mutableStateOf(MapState())
 
         init {
