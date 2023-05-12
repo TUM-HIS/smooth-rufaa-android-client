@@ -5,7 +5,7 @@ import teka.android.smoothrufaaandroidclient.domain.model.HospitalSpot
 
 data class MapState(
     val properties: MapProperties = MapProperties(),
-    val parkingSpots: List<HospitalSpot> = emptyList(),
+    val hospitalSpots: HospitalSpot ?= null,
     val isFalloutMap: Boolean = false
 
 )
