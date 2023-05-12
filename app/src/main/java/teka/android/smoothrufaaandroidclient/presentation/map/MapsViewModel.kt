@@ -9,8 +9,7 @@ import javax.inject.Inject;
 
 import dagger.hilt.android.lifecycle.HiltViewModel;
 import kotlinx.coroutines.launch
-import teka.android.smoothrufaaandroidclient.domain.model.HospitalSpot
-import teka.android.smoothrufaaandroidclient.domain.repository.HospitalSpotRepository;
+import teka.android.smoothrufaaandroidclient.domain.items.HospitalSpot
 
 @HiltViewModel
 class MapsViewModel @Inject constructor(): ViewModel() {

@@ -1,8 +1,7 @@
 package teka.android.smoothrufaaandroidclient.data.repository
 
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
-import teka.android.smoothrufaaandroidclient.domain.model.HospitalSpot
+import teka.android.smoothrufaaandroidclient.domain.items.HospitalSpot
 import teka.android.smoothrufaaandroidclient.domain.repository.HospitalSpotRepository
 
 

@@ -74,11 +74,26 @@ dependencies {
     // Compose dependencies
     implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation 'androidx.navigation:navigation-compose:2.5.3'
 
     //Dagger - Hilt
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-android-compiler:2.44"
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
+
+    // LiveData
+    implementation "androidx.compose.runtime:runtime-livedata:1.4.3"
+
+    // Retrofit2
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // ViewModel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+
+    //lifecycle
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+
 
 
 

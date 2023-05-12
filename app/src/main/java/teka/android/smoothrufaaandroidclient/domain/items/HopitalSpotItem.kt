@@ -1,4 +1,4 @@
-package teka.android.smoothrufaaandroidclient.domain.model
+package teka.android.smoothrufaaandroidclient.domain.items
 
 data class HospitalSpot(
     val lat: Double,

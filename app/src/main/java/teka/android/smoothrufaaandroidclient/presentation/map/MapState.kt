@@ -1,7 +1,7 @@
 package teka.android.smoothrufaaandroidclient.presentation.map
 
 import com.google.maps.android.compose.MapProperties
-import teka.android.smoothrufaaandroidclient.domain.model.HospitalSpot
+import teka.android.smoothrufaaandroidclient.domain.items.HospitalSpot
 
 data class MapState(
     val properties: MapProperties = MapProperties(),
