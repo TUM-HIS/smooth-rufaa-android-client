@@ -1,6 +1,5 @@
 package teka.android.smoothrufaaandroidclient
 
-import com.google.android.gms.maps.model.LatLng
 import teka.android.smoothrufaaandroidclient.ui.theme.SmoothRufaaAndroidClientTheme
 
 import android.os.Bundle
@@ -10,8 +9,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import teka.android.smoothrufaaandroidclient.presentation.map.MapScreen
+import teka.android.smoothrufaaandroidclient.navigation.MyAppNavHost
 
 
 @AndroidEntryPoint
@@ -25,7 +25,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MapScreen()
+
+                    MyAppNavHost()
                 }
             }
         }

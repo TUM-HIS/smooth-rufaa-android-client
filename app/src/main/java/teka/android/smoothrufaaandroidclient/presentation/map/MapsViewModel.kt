@@ -14,11 +14,17 @@ import teka.android.smoothrufaaandroidclient.domain.repository.FacilityRepositor
 
 @HiltViewModel
 class MapsViewModel @Inject constructor(
-        facilityRepository: FacilityRepository
+        //facilityRepository: FacilityRepository
 ): ViewModel() {
         var state by mutableStateOf(MapState())
 
         init {
+              getSpot()
+        }
+
+
+        private fun getSpot(){
+
                 viewModelScope.launch {
                         state = state.copy(
                                 hospitalSpots = HospitalSpot(
@@ -27,6 +33,7 @@ class MapsViewModel @Inject constructor(
                                 )
                         )
                 }
+
         }
 
 

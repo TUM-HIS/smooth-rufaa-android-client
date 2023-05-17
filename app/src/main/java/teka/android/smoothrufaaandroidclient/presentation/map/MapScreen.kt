@@ -13,12 +13,14 @@ import com.google.maps.android.compose.*
 @Composable
 fun MapScreen(
     navController: NavController,
-    facilityCode: String
-    //viewModel: MapsViewModel = viewModel()
+    viewModel: MapsViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
 ){
 
 
-    val facilityLocation = LatLng(-4.0616872121212095, 39.67737171507561)
+   // val facilityLocation = LatLng(-4.0616872121212095, 39.67737171507561)
+    val hospitalSpot = viewModel.state.hospitalSpots
+    val facilityLocation = LatLng(hospitalSpot!!.lat, hospitalSpot.lng)
+
     val cameraPositionState = rememberCameraPositionState {
         position = CameraPosition.fromLatLngZoom(facilityLocation, 300f)
     }
