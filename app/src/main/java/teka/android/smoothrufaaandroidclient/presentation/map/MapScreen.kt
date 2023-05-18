@@ -2,6 +2,7 @@ package teka.android.smoothrufaaandroidclient.presentation.map
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.lifecycle.viewmodel.compose.viewModel;
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
@@ -13,7 +14,7 @@ import com.google.maps.android.compose.*
 @Composable
 fun MapScreen(
     navController: NavController,
-    viewModel: MapsViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
+    viewModel: MapsViewModel = viewModel()
 ){
 
 
